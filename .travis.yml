@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy: 
+  provider: heroku
+  api_key:
+    secure: UZrCbrqvOCY1aqGO8Vo2OHauZ87ljn+XliEOEC1wBCJAN1cWLhGtd7sZF7YID5sMIr5DRaKSiF40KoJKRkepkt+BtNpA08+q6K7ROqc08KaASano9h6yPOgp9PROcoVFxuk5GUteI9oOI+7W/NT4kyhs2tpbj4CRiUgvRsPKiYVUrsqIran5bnEx2FCjD4R4O9GRxhNhZfi7orQRnthUdNkv8UCWZVQzQgzSdI5dQHmjf6T8Kq2yvmGkUN3za4x+5mm5iMl/YVt88EXPW6hGKmqMXcho5vshXuqCk2E4phRomNHeRiDlgFVB5r7JN8pktC8DnWf4jd3J+RR+U1zfCoODTU3TWpkSdZficjbasJY/80cY/P0Z0Z0U/Gb2D6NpjRTOWaoKFJY7YTTNwEnBH1xZQRNbNsHtOWlaiuHAGkrt+JxdsNjny+y6iP88rUWcvGNhLV6DRPGP19eyp+BQPHpWp+WE05Yy3lKpArqNDBsvxcXawfdaAhdPG1lxu66Tu4wqmkCi2krnpV/tjHZ/1xLmoRlJjJxigKNnXmVzWVe3ljHLHu11qi1JiyAoblftcmXr5w6osTNk0XQYEpz3O4AEWeWhpnLSSZSfbwsUc0Ab/iIcbYmOjCutcwbkYgqoIrgIKnJpCRPpUoXeBAglOKADUvL3H3dWxQgNH6T3HnI=
+  app: arcane-bastion-39386
+  on:
+    repo: Takaitech/blog-app-mongoose-tests
+    branch: test/endpoints
